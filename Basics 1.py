@@ -86,3 +86,27 @@ def reverse_string(text):
 
 print(reverse_string("kaki"))
 
+print ("hey")
+
+def reverse_string(text):
+    reversed_word = ""
+    # I chose the name 'letter' this time
+    for letter in text:
+        reversed_word = letter + reversed_word
+    return reversed_word
+
+print(reverse_string("Jhon"))
+
+
+
+def reverse_string(text):
+    reversed_word = ""
+    # I chose the name 'letter' this time
+    for letter in text:
+        reversed_word = letter + reversed_word
+    return reversed_word
+
+print(reverse_string("Jhonny"))
+
+
+
