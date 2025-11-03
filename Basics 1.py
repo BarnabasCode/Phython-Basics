@@ -126,4 +126,71 @@ print(reverse_string("xcssds"))
 
 
 
+def reverse_string(text):
+    reversed_word = ""
+    # I chose the name 'letter' this time
+    for letter in text:
+        reversed_word = letter + reversed_word
+    return reversed_word
 
+print(reverse_string("dffsdf"))
+
+
+
+number = [i for i in range(11)]
+print(number)
+
+squared = [i*i for i in range(11)]
+print(squared)
+
+even_numbers = [i for i in range(21) if i % 2 == 0]
+print(even_numbers)
+
+numbers = [-4, -3, -2, -1, 0, 2, 4, 6]
+
+negatives = [i for i in numbers if i < 0]
+print(negatives)
+
+list_of_lists =[[[1, 2, 3]], [[4, 5, 6]], [[7, 8, 9]]]
+
+newlist = [list for list1 in list_of_lists for list2 in list1 for list in list2]
+print(newlist)
+
+
+weird = [(i, 1, i, i**3, i**4, i**5) for i in range(11)]
+
+for item in weird:
+    print(weird)
+
+# The loop variable 'i' goes from 0 to 10.
+# The tuple elements are i, 1, and then i to the power of 1, 2, 3, 4, and 5.
+result = [(i, 1, i, i**2, i**3, i**4, i**5) for i in range(11)]
+
+# Print the result
+for item in result:
+    print(item)
+
+
+def absolute (x):
+    if x >= 0:
+        return x
+    else:
+        return -(x)
+
+print(absolute(-1))
+
+def add_ten():
+    ten = 10
+
+    def add(num):
+        return num + 10
+    return add
+
+closure_result = add_ten()
+print(closure_result(10))
+
+
+multiline_string = """I am a teacher and enjoy teaching.
+I didn't find anything as rewarding as empowering people.
+That is why I created 30 days of python."""
+print(multiline_string)
