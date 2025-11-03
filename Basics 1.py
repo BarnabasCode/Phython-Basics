@@ -194,3 +194,28 @@ multiline_string = """I am a teacher and enjoy teaching.
 I didn't find anything as rewarding as empowering people.
 That is why I created 30 days of python."""
 print(multiline_string)
+
+try:
+    # 1. Try to get and convert hours
+    hours = float(input("Enter hours: "))
+    
+    # 2. Try to get and convert rate
+    rate = float(input("Enter rate per hour: "))
+    
+    # 3. Calculate and print the pay
+    # These lines are now INSIDE the try block.
+    # They will only run if the lines above work.
+    pay = hours * rate
+    print(f"Your weekly earning is {pay}")
+
+except ValueError:
+    # 4. This code runs if either float() conversion fails
+    print("Error: You must enter valid numbers.")
+
+
+
+word = 'pyhton'
+firstletter = word[0]
+print(firstletter)
+
+
