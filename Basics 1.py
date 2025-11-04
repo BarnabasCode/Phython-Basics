@@ -218,4 +218,10 @@ word = 'pyhton'
 firstletter = word[0]
 print(firstletter)
 
+word = 'haha'
+firstletter = word[0]
+print(firstletter)
+
+
+
 
