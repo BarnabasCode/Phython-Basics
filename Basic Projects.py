@@ -58,7 +58,7 @@ def computerguess(num):
     
     print(f'yay got it its {compguess}')
         
-
+computerguess(10)
     
     
 
